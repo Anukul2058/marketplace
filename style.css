@@ -1,0 +1,570 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 300vh;
+    overflow-x: hidden;
+    background-color: #222227;
+}
+nav{
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    background-color: #222227;
+    color: white;
+    align-items: center;
+    position: fixed;
+    justify-content: space-around;
+    z-index: 5;
+}
+nav #menu{
+    display: none;
+    cursor: pointer;
+}
+.first-section{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    justify-content: space-around;
+}
+input{
+    width: 20vw;
+    height: 5vh;
+
+}
+nav ul {
+    display: flex;
+    width: 45%;
+    justify-content: space-around;
+}
+nav ul li {
+    list-style: none;
+    
+    top: 5vh;
+    font-size: 3vh;
+    cursor: pointer;
+}
+
+nav ul ul{
+    position: absolute;
+    top: 10vh;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+nav ul ul li{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+
+
+
+nav ul ul ul {
+    position: absolute;
+    top: 4vh;
+    color: green;
+    left: 4.5vw;
+}
+.first-dropdown{
+    width: 25%;
+    height: 20vh;
+    background-color:#222227;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10%;
+
+    
+    display: none;
+    
+}
+.mystyle {
+    display: flex;
+}
+.second-dropdown{
+    width: 25%;
+    height: 20vh;
+    background-color: #222227;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10%;
+    display: none;
+
+}
+.mystyle2{
+    display: flex;
+}
+.third-dropdown{
+    width: 25%;
+    height: 20vh;
+    background-color: #222227;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10%;
+    display: none;
+
+}
+.mystyle3{
+    display: flex;
+}
+.forth-dropdown{
+    width: 50%;
+    height: 20vh;
+    background-color: #222227;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10%;
+    position: absolute;
+    top: 0vh;
+    right: 6vw;
+    display: none;
+
+}
+.mystyle4{
+    display: flex;
+}
+/* #four:hover .forth-dropdown{
+    display: flex;
+} */
+
+.circle{
+    width: 15vw;
+    border:0.5px solid grey;
+    display: flex;
+    align-items: center;
+    height: 15vh;
+    justify-content: space-between;
+    border-radius: 20%;
+    cursor: pointer;
+    text-align: center;
+}
+.circle:hover{
+    border:0.5px solid skyblue;
+
+}
+.circle:hover .fifth-dropdown{
+    display: flex;
+}
+.t{
+    display: flex;
+    height: 10vh;
+    flex-direction: column;
+    font-size: 3vh;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 5vh;
+    font-size: 1.3vw;
+
+
+}
+.circle ul{
+    position: absolute;
+    top: 15vh;
+    right: 1vw;
+    display: flex;
+    flex-direction: column;
+    background-color:black;
+    width: 15vw;
+    height: 20vh;
+    border-radius: 20%;
+    display: none;
+}
+.mystyle5{
+    display: flex;
+}
+.circle ul li {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.four:hover .forth-dropdown{
+    display: flex;
+}
+#search{
+    display: none;
+}
+
+.container{
+    width: 70%;
+    height: 60vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-evenly;
+    margin-top: 10vh;
+    margin-left: 10vw;
+    z-index: 4;
+   
+
+}
+.container h1{
+    font-size: 3.5rem;
+}
+.container p{
+    font-size: 1.3rem;
+}
+.button-section{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+.button-section button{
+    border-radius: 10%;
+    border: none;
+}
+#explore{
+    padding: 2vh;
+    width: 15vw;
+    font-size: 2vw;
+    background-color: rgb(67, 67, 250);
+}
+#create{
+    padding: 2vh;
+    width: 15vw;
+    font-size: 2vw;
+
+}
+.live-auctions{
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+
+}
+.live-auctions h1{
+    margin-left: 10vw;
+    
+}
+#left{
+    font-size: 3vw; color: white;
+}
+.card-section{
+    margin-top: 10vh;
+    display: flex;
+    margin-left: 8vw;
+    font-family: sans-serif;
+    
+
+}
+.card{
+    width: 24vw;
+    height: 82vh;
+    border: 0.05px solid gray;
+    padding: 2vw;
+    border-radius: 10%;
+    box-shadow: 2vw 3vw #222227;
+    
+}
+.card img{
+    width: 100%;height: 40vh; border-radius: 10%;
+}
+.caption{
+    margin-top: 5vh;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+}
+.caption h2{
+    font-size: 2.3vw;
+}
+.caption h3{
+    font: 1.5vw;
+
+}
+.caption hr{
+    opacity: 0.3;
+    
+}
+.price{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+#arrows{
+    position: absolute;
+    top: -10vh;
+    right: 5vw;
+    
+}
+.container2{
+    margin-top: 15vh;
+    width: 100vw;
+    height: 40vh;
+    margin-left: 7vw;
+    color: white;
+}
+.container2 h1{
+    font-size: 5vw
+}
+.list-section{
+    width: 90%;
+    height: 40vh;
+    margin-top: 7vh;
+    margin-left: -2vw;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.list-card{
+    width: 20%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 1.5vw;
+}
+.list-card h2{
+    font-size: 2vw;
+}
+footer{
+    margin-top: 20vh;
+    width: 80%;
+    display: flex;
+    justify-content: space-between
+}
+footer ul{
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+    font-size: 2vw;
+    list-style: none;
+}
+
+@media only screen and (max-width: 550px){
+    .first-section input{
+        display: none;
+    
+    }
+    #profile{
+        display: none;
+    }
+    #search{
+        font-size: 4vw;
+        display: block;
+        cursor: pointer;
+
+    }
+    #search:hover{
+        font-size: 5vw;
+        color: rgb(80, 80, 252);
+    }
+    nav ul {
+        display: none;
+
+
+        
+    }
+    nav #menu{
+        font-size: 5vw;
+        display: block;
+    }
+    .t{
+        font-size: 3vw;
+    
+    }
+    .fifth-dropdown{
+        margin-right: 20vw;
+        
+    }
+    .circle ul {
+        width: 30vw;
+    }
+    .card{
+        width: 70%;
+        margin-left: 10%;
+    }
+    #left{
+        font-size: 5vw;
+    }
+    footer ul {
+        font-size: 3vw;
+    }
+    .circle{
+        width: 30vw;
+    }
+    .list-card{
+        font-size: 2vw;
+    }
+    .list-card h2{
+        font-size: 3.5vw;
+    }
+    .container{
+        margin-top: 20vh;
+    }
+    .caption h2{
+        font-size: 5vw;
+    }
+    .search-bar{
+        width: 100%;
+        height: 15vh;
+        display: flex;
+        position: absolute;
+        top: 0;
+        background-color: #222227;
+        padding: 3vw;
+        justify-content: space-around;
+        font-size: 5vw;
+    
+        z-index: 25;
+        align-items: center;
+        color: white;
+        display: none;
+    }
+    
+     
+    .search-bar input{
+        width: 90%;
+        background-color: grey;
+        border: none;
+        border-radius: 10px;
+        height: 8vh;
+        color: white;
+        padding: 3vw;
+    }
+    .search-bar input::placeholder{
+        color: white;
+    }
+    .search-bar input:focus{
+        outline: none;
+    }
+    #cross{
+        cursor: pointer;
+
+    }
+    #cross:hover{
+        color: rgb(248, 89, 89);
+    }
+
+    
+
+
+
+}
+.side-nav{
+    width: 30%;
+    height: 85vh;
+    color: white;
+    background-color: #222227;
+    position: fixed;
+    top: 15vh;
+    right:0;
+    font-size: 4vw;
+    display: none;
+    
+    
+    
+
+}
+.side-nav .meow {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    height: 85vh;
+    justify-content: space-around;
+    margin-left: 5vw
+    
+
+
+}
+.side-nav .meow #First:hover .first-drop{
+    display: flex;
+}
+.side-nav ul li {
+    list-style: none;
+    
+}
+.side-nav ul ul li:hover{
+    font-size: 2.8vw;
+    cursor: pointer;
+}
+
+.first-drop{
+   border : 1px solid white;
+   margin-top: 5%;
+   display: none;
+   height: 20vh;
+   flex-direction: column;
+   justify-content: space-around;
+   padding: 10%;
+   width: 20vw;
+   font-size: 2.5vw;
+   border-radius: 10%;
+
+   
+}
+.s-dropdown{
+    margin-top: 10%;
+    height: 10vh;
+    border : 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10%;
+    display: none;
+   font-size: 2.5vw;
+   border-radius: 10%;
+
+
+
+    
+}
+#Second:hover .s-dropdown{
+    display: flex;
+}
+.t-dropdown{
+    margin-top: 10%;
+    height: 20vh;
+    border : 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10%;
+    display: none;
+   font-size: 2.5vw;
+   border-radius: 10%;
+
+
+}
+#Third:hover .t-dropdown{
+    display: flex;
+}
+.f-dropdown{
+    border : 0.1px solid white;
+    border-radius: 10%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10%;
+    display: none;
+   font-size: 2.5vw;
+
+
+}
+#Four:hover .f-dropdown{
+    display: flex;
+}
+.sidenavbar{
+    display: flex;
+    
+}
+
+
+
